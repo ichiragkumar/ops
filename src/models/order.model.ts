@@ -1,11 +1,9 @@
 
 import  { model, Schema } from "mongoose";
+import { ORDER_STATUS } from "../config/Types";
 
 
-export enum ORDER_STATUS  { 
-   PENDING =  "pending",
-   CONFIRMED= "confirmed"
-}
+
 interface OrderDocumentInterface extends Document{
     productId : string;
     quantity:number;
